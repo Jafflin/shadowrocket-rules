@@ -8,6 +8,7 @@ Personal Shadowrocket rules for routing:
 - WeChat, Tencent, and common mainland China apps directly
 - WeChat mini program and video media resources directly
 - Tencent Video, Tencent Sports, and related media traffic directly
+- Meituan, Dianping, Xianyu, Alipay, Didi, and mainland stock apps directly
 - Common mainland China cloud and CDN providers directly
 - Mainland China `.cn` domains and China GeoIP traffic directly
 - Other traffic through the fastest available node group
