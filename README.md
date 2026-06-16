@@ -14,7 +14,7 @@ Import `shadowrocket.conf` as a remote config URL, or paste the `[Rule]` section
 
 Current policy names:
 
-- `Xray VMess：IEPL-香港01 - 解锁流媒体`: Hong Kong node
+- `Xray VMess：CU | 香港05 - 解锁流媒体`: Hong Kong node
 - `SS-Rust：IEPL | 美国01-解锁流媒体`: US node
 - `SS-Rust：IEPL | 美国01-解锁流媒体`: current fastest fallback node
 
