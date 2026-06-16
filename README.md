@@ -5,6 +5,7 @@ Personal Shadowrocket rules for routing:
 - Streaming services through Hong Kong nodes
 - AI services through US nodes
 - Futu / Futubull / Moomoo through Hong Kong nodes
+- Mainland China websites and IPs directly
 - Other traffic through the fastest available node group
 
 ## Usage
@@ -30,4 +31,5 @@ Keep specific rules above the final rule:
 1. Futu / Moomoo
 2. Streaming
 3. AI
-4. `FINAL,FAST`
+4. Mainland China direct rules
+5. `FINAL,FAST`
