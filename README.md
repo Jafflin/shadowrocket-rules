@@ -1,6 +1,24 @@
 # Shadowrocket Rules
 
-Personal Shadowrocket rules for routing:
+Personal Shadowrocket rules for routing. This repo is meant to be updated over
+time whenever a new app, website, or routing preference needs to be added.
+
+## Subscription URL
+
+Use this URL in Shadowrocket as the remote config:
+
+```text
+https://raw.githubusercontent.com/Jafflin/shadowrocket-rules/main/shadowrocket-auto.conf
+```
+
+Main maintained config:
+
+- `shadowrocket-auto.conf`
+
+Older/alternate configs are kept in the repo for reference, but the URL above is
+the one to use day to day.
+
+## Current Routing Policy
 
 - Streaming services through the fastest available Hong Kong node
 - AI services through the fastest available US node
@@ -13,9 +31,7 @@ Personal Shadowrocket rules for routing:
 - Mainland China `.cn` domains and China GeoIP traffic directly
 - Other traffic through the fastest available node group
 
-## Usage
-
-Import `shadowrocket-auto.conf` as a remote config URL.
+## Policy Groups
 
 The config defines three `url-test` policy groups:
 
@@ -29,9 +45,9 @@ If your existing Shadowrocket config already has a final rule such as `FINAL` or
 FINAL,FAST_AUTO
 ```
 
-## Rule Order
+## Rule Order Principles
 
-Keep specific rules above the final rule:
+Keep specific rules above broad fallback rules:
 
 1. Futu / Moomoo
 2. Streaming
@@ -39,3 +55,32 @@ Keep specific rules above the final rule:
 4. WeChat / Tencent and common mainland China direct rules
 5. Mainland China `.cn` and `GEOIP,CN` direct rules
 6. `FINAL,FAST_AUTO`
+
+The Futu / Futubull / Moomoo rules must stay above all mainland direct rules so
+they continue to use `HK_AUTO`.
+
+## How To Request Updates
+
+When asking for a new rule update, provide any of the following:
+
+- App or website name
+- Preferred route: `DIRECT`, `HK_AUTO`, `US_AUTO`, or `FAST_AUTO`
+- Any domain shown in Shadowrocket logs
+- What feels wrong: slow loading, wrong region, login risk, payment issue, video buffering
+
+Example:
+
+```text
+Add Xiaohongshu image/video domains as DIRECT.
+```
+
+After each update:
+
+1. Edit `shadowrocket-auto.conf`
+2. Keep specific rules above broad rules
+3. Check for duplicate domains
+4. Commit and push to GitHub
+5. Verify the raw URL
+
+See `UPDATE_REQUEST.md` for a copyable request template and `CHANGELOG.md` for
+the update history.
