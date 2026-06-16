@@ -2,26 +2,26 @@
 
 Personal Shadowrocket rules for routing:
 
-- Streaming services through Hong Kong nodes
-- AI services through the selected US node
+- Streaming services through the fastest available Hong Kong node
+- AI services through the fastest available US node
 - Futu / Futubull / Moomoo through Hong Kong nodes
 - Mainland China websites and IPs directly
 - Other traffic through the fastest available node group
 
 ## Usage
 
-Import `shadowrocket.conf` as a remote config URL, or paste the `[Rule]` section into an existing Shadowrocket config.
+Import `shadowrocket-auto.conf` as a remote config URL.
 
-Current policy names:
+The config defines three `url-test` policy groups:
 
-- `Xray VMess：CU | 香港05 - 解锁流媒体`: Hong Kong node
-- `SS-Rust：IEPL | 美国01-解锁流媒体`: US node
-- `SS-Rust：IEPL | 美国01-解锁流媒体`: current fastest fallback node
+- `HK_AUTO`: tests Hong Kong nodes and uses the fastest available one
+- `US_AUTO`: tests US nodes and uses the fastest available one
+- `FAST_AUTO`: tests common available nodes and uses the fastest one
 
 If your existing Shadowrocket config already has a final rule such as `FINAL` or `MATCH`, keep only one final rule and make it:
 
 ```ini
-FINAL,SS-Rust：IEPL | 美国01-解锁流媒体
+FINAL,FAST_AUTO
 ```
 
 ## Rule Order
@@ -32,4 +32,4 @@ Keep specific rules above the final rule:
 2. Streaming
 3. AI
 4. Mainland China direct rules
-5. `FINAL,SS-Rust：IEPL | 美国01-解锁流媒体`
+5. `FINAL,FAST_AUTO`
