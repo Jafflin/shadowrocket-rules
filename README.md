@@ -6,6 +6,7 @@ Personal Shadowrocket rules for routing:
 - AI services through the fastest available US node
 - Futu / Futubull / Moomoo through Hong Kong nodes
 - WeChat, Tencent, and common mainland China apps directly
+- Common mainland China cloud and CDN providers directly
 - Mainland China `.cn` domains and China GeoIP traffic directly
 - Other traffic through the fastest available node group
 
