@@ -9,7 +9,7 @@ Personal Shadowrocket rules for routing:
 
 ## Usage
 
-Import or paste `shadowrocket.conf` into Shadowrocket rules.
+Import `shadowrocket.conf` as a remote config URL, or paste the `[Rule]` section into an existing Shadowrocket config.
 
 Before using it, replace these policy names with the names in your own subscription:
 
@@ -31,4 +31,3 @@ Keep specific rules above the final rule:
 2. Streaming
 3. AI
 4. `FINAL,FAST`
-
