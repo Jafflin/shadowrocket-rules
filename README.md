@@ -21,6 +21,7 @@ the one to use day to day.
 ## Current Routing Policy
 
 - Streaming services through the fastest available Hong Kong node
+- Overseas social apps through the fastest available Hong Kong node
 - AI services through the fastest available US node
 - Futu / Futubull / Moomoo through Hong Kong nodes
 - WeChat, Tencent, and common mainland China apps directly
@@ -52,9 +53,10 @@ Keep specific rules above broad fallback rules:
 1. Futu / Moomoo
 2. Streaming
 3. AI
-4. WeChat / Tencent and common mainland China direct rules
-5. Mainland China `.cn` and `GEOIP,CN` direct rules
-6. `FINAL,FAST_AUTO`
+4. Overseas social apps
+5. WeChat / Tencent and common mainland China direct rules
+6. Mainland China `.cn` and `GEOIP,CN` direct rules
+7. `FINAL,FAST_AUTO`
 
 The Futu / Futubull / Moomoo rules must stay above all mainland direct rules so
 they continue to use `HK_AUTO`.

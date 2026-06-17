@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-06-17
+
+- Added Hong Kong routing for overseas social apps: WhatsApp, Facebook, LinkedIn, LINE, Telegram, Meta Horizon, Instagram, Kickstarter, Signal, Discord, and X/Twitter/XChat-related domains.
+- Kept AI-oriented domains such as `x.ai` and `meta.ai` out of the Hong Kong social block so AI services continue to use `US_AUTO` where configured.
+
 ## 2026-06-16
 
 - Created and published the maintained Shadowrocket remote config.
