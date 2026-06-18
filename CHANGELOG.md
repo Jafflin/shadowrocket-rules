@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-06-18
+
+- Added `REJECT` rules for common YouTube and Google advertising domains.
+- Kept YouTube playback domains such as `googlevideo.com` unblocked to avoid breaking normal videos.
+- Documented the limitation that domain-level filtering cannot reliably distinguish every YouTube in-stream ad from normal video traffic.
+
 ## 2026-06-17
 
 - Added Hong Kong routing for overseas social apps: WhatsApp, Facebook, LinkedIn, LINE, Telegram, Meta Horizon, Instagram, Kickstarter, Signal, Discord, and X/Twitter/XChat-related domains.

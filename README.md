@@ -21,6 +21,7 @@ the one to use day to day.
 ## Current Routing Policy
 
 - Streaming services through the fastest available Hong Kong node
+- Common YouTube and Google ad-serving domains rejected
 - Overseas social apps through the fastest available Hong Kong node
 - AI services through the fastest available US node
 - Futu / Futubull / Moomoo through Hong Kong nodes
@@ -50,13 +51,18 @@ FINAL,FAST_AUTO
 
 Keep specific rules above broad fallback rules:
 
-1. Futu / Moomoo
-2. Streaming
-3. AI
-4. Overseas social apps
-5. WeChat / Tencent and common mainland China direct rules
-6. Mainland China `.cn` and `GEOIP,CN` direct rules
-7. `FINAL,FAST_AUTO`
+1. YouTube / Google ad rejection
+2. Futu / Moomoo
+3. Streaming
+4. AI
+5. Overseas social apps
+6. WeChat / Tencent and common mainland China direct rules
+7. Mainland China `.cn` and `GEOIP,CN` direct rules
+8. `FINAL,FAST_AUTO`
+
+YouTube in-stream ads may share `googlevideo.com` with normal videos. The config
+does not reject that domain because doing so would break playback, so domain-level
+filtering cannot guarantee removal of every in-stream ad.
 
 The Futu / Futubull / Moomoo rules must stay above all mainland direct rules so
 they continue to use `HK_AUTO`.
