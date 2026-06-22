@@ -24,7 +24,7 @@ the one to use day to day.
 - Common YouTube and Google ad-serving domains rejected
 - Overseas social apps through the fastest available Hong Kong node
 - AI services through the fastest available US node
-- Futu / Futubull / Moomoo through Hong Kong nodes
+- Futu / Futubull / Moomoo through a dedicated Hong Kong-only test group
 - WeChat, Tencent, and common mainland China apps directly
 - WeChat mini program and video media resources directly
 - Tencent Video, Tencent Sports, and related media traffic directly
@@ -35,8 +35,9 @@ the one to use day to day.
 
 ## Policy Groups
 
-The config defines three `url-test` policy groups:
+The config defines four `url-test` policy groups:
 
+- `FUTU_HK`: tests only the four explicit Hong Kong lines against a lightweight Futu HK endpoint; excludes the ambiguous overseas-direct node
 - `HK_AUTO`: tests Hong Kong nodes and uses the fastest available one
 - `US_AUTO`: tests US nodes and uses the fastest available one
 - `FAST_AUTO`: tests common available nodes and uses the fastest one
@@ -65,14 +66,14 @@ does not reject that domain because doing so would break playback, so domain-lev
 filtering cannot guarantee removal of every in-stream ad.
 
 The Futu / Futubull / Moomoo rules must stay above all mainland direct rules so
-they continue to use `HK_AUTO`.
+they continue to use `FUTU_HK`.
 
 ## How To Request Updates
 
 When asking for a new rule update, provide any of the following:
 
 - App or website name
-- Preferred route: `DIRECT`, `HK_AUTO`, `US_AUTO`, or `FAST_AUTO`
+- Preferred route: `DIRECT`, `FUTU_HK`, `HK_AUTO`, `US_AUTO`, or `FAST_AUTO`
 - Any domain shown in Shadowrocket logs
 - What feels wrong: slow loading, wrong region, login risk, payment issue, video buffering
 

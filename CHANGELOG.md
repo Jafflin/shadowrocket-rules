@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-06-22
+
+- Added a dedicated `FUTU_HK` url-test group for Futu / Futubull / Moomoo.
+- Restricted `FUTU_HK` to four explicit Hong Kong lines and removed the ambiguous `Overseas Direct | Hong Kong` node from Futu selection.
+- Changed the Futu test target to a 66-byte endpoint on the official Futu Hong Kong website and shortened the test interval to five minutes.
+- Routed every Futu / Futubull / Moomoo domain and keyword rule through `FUTU_HK`.
+
 ## 2026-06-18
 
 - Added `REJECT` rules for common YouTube and Google advertising domains.
