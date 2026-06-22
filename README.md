@@ -20,6 +20,7 @@ the one to use day to day.
 
 ## Current Routing Policy
 
+- Home routers and private/local network services bypass the tunnel and connect directly
 - Streaming services through the fastest available Hong Kong node
 - Common YouTube and Google ad-serving domains rejected
 - Overseas social apps through the fastest available Hong Kong node
@@ -52,14 +53,15 @@ FINAL,FAST_AUTO
 
 Keep specific rules above broad fallback rules:
 
-1. YouTube / Google ad rejection
-2. Futu / Moomoo
-3. Streaming
-4. AI
-5. Overseas social apps
-6. WeChat / Tencent and common mainland China direct rules
-7. Mainland China `.cn` and `GEOIP,CN` direct rules
-8. `FINAL,FAST_AUTO`
+1. Local/private network direct rules
+2. YouTube / Google ad rejection
+3. Futu / Moomoo
+4. Streaming
+5. AI
+6. Overseas social apps
+7. WeChat / Tencent and common mainland China direct rules
+8. Mainland China `.cn` and `GEOIP,CN` direct rules
+9. `FINAL,FAST_AUTO`
 
 YouTube in-stream ads may share `googlevideo.com` with normal videos. The config
 does not reject that domain because doing so would break playback, so domain-level

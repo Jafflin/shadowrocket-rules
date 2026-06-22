@@ -2,6 +2,8 @@
 
 ## 2026-06-22
 
+- Added tunnel exclusions and top-priority `DIRECT` rules for private LAN ranges, including `192.168.0.0/16`, so home routers and internal services remain reachable while Shadowrocket is connected.
+- Added direct handling for `.local`, `.lan`, and `home.arpa` local names, plus link-local, CGNAT/overlay, and multicast ranges.
 - Added a dedicated `FUTU_HK` url-test group for Futu / Futubull / Moomoo.
 - Restricted `FUTU_HK` to four explicit Hong Kong lines and removed the ambiguous `Overseas Direct | Hong Kong` node from Futu selection.
 - Changed the Futu test target to a 66-byte endpoint on the official Futu Hong Kong website and shortened the test interval to five minutes.
