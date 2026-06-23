@@ -17,10 +17,18 @@ Use this stricter URL only when testing or using Futu / Futubull / Moomoo:
 https://raw.githubusercontent.com/Jafflin/shadowrocket-rules/main/shadowrocket-futu-strict.conf
 ```
 
+Use this balanced Futu URL when you want Futu protection while keeping core
+mainland apps like WeChat, Alipay, maps, Meituan, Dianping, and Didi direct:
+
+```text
+https://raw.githubusercontent.com/Jafflin/shadowrocket-rules/main/shadowrocket-futu-balanced.conf
+```
+
 Main maintained config:
 
 - `shadowrocket-auto.conf`
 - `shadowrocket-futu-strict.conf` for Futu strict mode
+- `shadowrocket-futu-balanced.conf` for Futu balanced mode
 
 Older/alternate configs are kept in the repo for reference, but the URL above is
 the one to use day to day.
@@ -34,6 +42,7 @@ the one to use day to day.
 - AI services through the fastest available US node
 - Futu / Futubull / Moomoo through a dedicated non-Hong-Kong overseas fallback group
 - Optional Futu strict mode sends all non-local traffic through the same overseas group
+- Optional Futu balanced mode keeps a small set of essential mainland apps direct
 - Futu-related overseas cloud/CDN endpoints stay above Tencent direct rules
 - WeChat, Tencent, and common mainland China apps directly
 - WeChat mini program and video media resources directly
@@ -85,6 +94,11 @@ If Futu still reports mainland China in the daily config, switch to
 traffic direct and sends everything else through `FUTU_OVERSEAS`, which avoids
 leakage through shared mainland direct rules. It is not meant for normal daily
 use because mainland apps may become slower.
+
+`shadowrocket-futu-balanced.conf` is the middle ground: it keeps local networks,
+WeChat, Alipay, maps, Meituan, Dianping, and Didi direct, while sending all
+other traffic through `FUTU_OVERSEAS`. It intentionally does not direct broad
+cloud domains such as `myqcloud.com`, `qcloud.com`, or `tencentyun.com`.
 
 ## How To Request Updates
 

@@ -2,6 +2,7 @@
 
 ## 2026-06-23
 
+- Added `shadowrocket-futu-balanced.conf`, a middle-ground Futu profile that keeps local networks plus WeChat, Alipay, maps, Meituan, Dianping, and Didi direct while sending all other traffic through `FUTU_OVERSEAS`.
 - Added `shadowrocket-futu-strict.conf`, a dedicated Futu strict-mode profile that keeps only local/private network traffic direct and sends all other traffic through `FUTU_OVERSEAS`.
 - Changed Futu routing from Hong Kong-only to a non-Hong-Kong overseas `FUTU_OVERSEAS` fallback group using US, Singapore, Japan, and Netherlands nodes.
 - Changed `FUTU_OVERSEAS` from latency-based `url-test` to stability-first `fallback` so Futu traffic keeps a more consistent overseas exit instead of switching nodes during use.
