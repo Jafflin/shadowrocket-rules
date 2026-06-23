@@ -26,6 +26,7 @@ the one to use day to day.
 - Overseas social apps through the fastest available Hong Kong node
 - AI services through the fastest available US node
 - Futu / Futubull / Moomoo through a dedicated Hong Kong-only test group
+- Futu-related Hong Kong cloud/CDN endpoints stay above Tencent direct rules
 - WeChat, Tencent, and common mainland China apps directly
 - WeChat mini program and video media resources directly
 - Tencent Video, Tencent Sports, and related media traffic directly
@@ -68,7 +69,8 @@ does not reject that domain because doing so would break playback, so domain-lev
 filtering cannot guarantee removal of every in-stream ad.
 
 The Futu / Futubull / Moomoo rules must stay above all mainland direct rules so
-they continue to use `FUTU_HK`.
+they continue to use `FUTU_HK`. Hong Kong-region Tencent Cloud and COS domains
+used by Futu-like traffic also stay above the broader Tencent direct block.
 
 ## How To Request Updates
 

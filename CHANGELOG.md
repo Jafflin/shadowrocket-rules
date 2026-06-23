@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-06-23
+
+- Added extra Futu-family domains and Hong Kong Tencent Cloud / COS endpoints to `FUTU_HK`, above the broader Tencent direct rules, to reduce Futu region misclassification.
+
 ## 2026-06-22
 
 - Added tunnel exclusions and top-priority `DIRECT` rules for private LAN ranges, including `192.168.0.0/16`, so home routers and internal services remain reachable while Shadowrocket is connected.
