@@ -25,8 +25,8 @@ the one to use day to day.
 - Common YouTube and Google ad-serving domains rejected
 - Overseas social apps through the fastest available Hong Kong node
 - AI services through the fastest available US node
-- Futu / Futubull / Moomoo through a dedicated Hong Kong-only test group
-- Futu-related Hong Kong cloud/CDN endpoints stay above Tencent direct rules
+- Futu / Futubull / Moomoo through a dedicated non-Hong-Kong overseas fallback group
+- Futu-related overseas cloud/CDN endpoints stay above Tencent direct rules
 - WeChat, Tencent, and common mainland China apps directly
 - WeChat mini program and video media resources directly
 - Tencent Video, Tencent Sports, and related media traffic directly
@@ -39,7 +39,7 @@ the one to use day to day.
 
 The config defines one stability-first Futu group and three automatic speed groups:
 
-- `FUTU_HK`: uses `fallback` across four explicit Hong Kong lines against a lightweight Futu HK endpoint; this favors a stable Hong Kong exit and avoids frequent latency-based switching
+- `FUTU_OVERSEAS`: uses `fallback` across explicit non-Hong-Kong overseas nodes; this favors a stable overseas exit and avoids frequent latency-based switching
 - `HK_AUTO`: tests Hong Kong nodes and uses the fastest available one
 - `US_AUTO`: tests US nodes and uses the fastest available one
 - `FAST_AUTO`: tests common available nodes and uses the fastest one
@@ -69,15 +69,15 @@ does not reject that domain because doing so would break playback, so domain-lev
 filtering cannot guarantee removal of every in-stream ad.
 
 The Futu / Futubull / Moomoo rules must stay above all mainland direct rules so
-they continue to use `FUTU_HK`. Hong Kong-region Tencent Cloud and COS domains
-used by Futu-like traffic also stay above the broader Tencent direct block.
+they continue to use `FUTU_OVERSEAS`. Likely overseas Tencent Cloud and COS
+domains used by Futu-like traffic also stay above the broader Tencent direct block.
 
 ## How To Request Updates
 
 When asking for a new rule update, provide any of the following:
 
 - App or website name
-- Preferred route: `DIRECT`, `FUTU_HK`, `HK_AUTO`, `US_AUTO`, or `FAST_AUTO`
+- Preferred route: `DIRECT`, `FUTU_OVERSEAS`, `HK_AUTO`, `US_AUTO`, or `FAST_AUTO`
 - Any domain shown in Shadowrocket logs
 - What feels wrong: slow loading, wrong region, login risk, payment issue, video buffering
 
