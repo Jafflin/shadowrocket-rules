@@ -5,15 +5,22 @@ time whenever a new app, website, or routing preference needs to be added.
 
 ## Subscription URL
 
-Use this URL in Shadowrocket as the remote config:
+Use this URL in Shadowrocket as the daily remote config:
 
 ```text
 https://raw.githubusercontent.com/Jafflin/shadowrocket-rules/main/shadowrocket-auto.conf
 ```
 
+Use this stricter URL only when testing or using Futu / Futubull / Moomoo:
+
+```text
+https://raw.githubusercontent.com/Jafflin/shadowrocket-rules/main/shadowrocket-futu-strict.conf
+```
+
 Main maintained config:
 
 - `shadowrocket-auto.conf`
+- `shadowrocket-futu-strict.conf` for Futu strict mode
 
 Older/alternate configs are kept in the repo for reference, but the URL above is
 the one to use day to day.
@@ -26,6 +33,7 @@ the one to use day to day.
 - Overseas social apps through the fastest available Hong Kong node
 - AI services through the fastest available US node
 - Futu / Futubull / Moomoo through a dedicated non-Hong-Kong overseas fallback group
+- Optional Futu strict mode sends all non-local traffic through the same overseas group
 - Futu-related overseas cloud/CDN endpoints stay above Tencent direct rules
 - WeChat, Tencent, and common mainland China apps directly
 - WeChat mini program and video media resources directly
@@ -71,6 +79,12 @@ filtering cannot guarantee removal of every in-stream ad.
 The Futu / Futubull / Moomoo rules must stay above all mainland direct rules so
 they continue to use `FUTU_OVERSEAS`. Likely overseas Tencent Cloud and COS
 domains used by Futu-like traffic also stay above the broader Tencent direct block.
+
+If Futu still reports mainland China in the daily config, switch to
+`shadowrocket-futu-strict.conf`. Strict mode keeps only LAN/private network
+traffic direct and sends everything else through `FUTU_OVERSEAS`, which avoids
+leakage through shared mainland direct rules. It is not meant for normal daily
+use because mainland apps may become slower.
 
 ## How To Request Updates
 

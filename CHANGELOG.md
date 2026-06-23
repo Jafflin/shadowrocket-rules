@@ -2,6 +2,7 @@
 
 ## 2026-06-23
 
+- Added `shadowrocket-futu-strict.conf`, a dedicated Futu strict-mode profile that keeps only local/private network traffic direct and sends all other traffic through `FUTU_OVERSEAS`.
 - Changed Futu routing from Hong Kong-only to a non-Hong-Kong overseas `FUTU_OVERSEAS` fallback group using US, Singapore, Japan, and Netherlands nodes.
 - Changed `FUTU_OVERSEAS` from latency-based `url-test` to stability-first `fallback` so Futu traffic keeps a more consistent overseas exit instead of switching nodes during use.
 - Added extra Futu-family domains and overseas Tencent Cloud / COS endpoints to `FUTU_OVERSEAS`, above the broader Tencent direct rules, to reduce Futu region misclassification.
