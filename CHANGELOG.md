@@ -2,6 +2,8 @@
 
 ## 2026-06-23
 
+- Rebuilt `shadowrocket-auto.conf` as a unified daily-safe profile: known mainland apps stay direct, streaming/social/AI keep their regional routing, Futu stays on `FUTU_OVERSEAS`, and unknown traffic defaults to `FUTU_OVERSEAS`.
+- Removed broad direct catch-all behavior from the unified config, including `.cn`, `GEOIP,CN`, and wide mainland cloud/CDN direct rules that could accidentally catch Futu shared infrastructure.
 - Added `shadowrocket-futu-balanced.conf`, a middle-ground Futu profile that keeps local networks plus WeChat, Alipay, maps, Meituan, Dianping, and Didi direct while sending all other traffic through `FUTU_OVERSEAS`.
 - Added `shadowrocket-futu-strict.conf`, a dedicated Futu strict-mode profile that keeps only local/private network traffic direct and sends all other traffic through `FUTU_OVERSEAS`.
 - Changed Futu routing from Hong Kong-only to a non-Hong-Kong overseas `FUTU_OVERSEAS` fallback group using US, Singapore, Japan, and Netherlands nodes.
