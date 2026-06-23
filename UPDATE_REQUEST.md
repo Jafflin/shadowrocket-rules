@@ -14,7 +14,7 @@ Notes:
 ## Preferred Routes
 
 - `DIRECT`: Mainland China apps, payment, shopping, food delivery, maps, ride hailing, domestic video, domestic CDN
-- `FUTU_HK`: Futu / Futubull / Moomoo only; tests the explicit Hong Kong lines against a lightweight Futu HK endpoint
+- `FUTU_HK`: Futu / Futubull / Moomoo only; uses a stability-first Hong Kong fallback group against a lightweight Futu HK endpoint
 - `HK_AUTO`: Overseas streaming and social services that should appear in Hong Kong
 - `US_AUTO`: ChatGPT, Gemini, Claude, Perplexity, Poe, Copilot, and other AI services
 - `FAST_AUTO`: General fallback for traffic that does not need a fixed region

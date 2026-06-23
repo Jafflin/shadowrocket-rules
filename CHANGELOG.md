@@ -2,6 +2,7 @@
 
 ## 2026-06-23
 
+- Changed `FUTU_HK` from latency-based `url-test` to stability-first `fallback` so Futu traffic keeps a more consistent Hong Kong exit instead of switching nodes during use.
 - Added extra Futu-family domains and Hong Kong Tencent Cloud / COS endpoints to `FUTU_HK`, above the broader Tencent direct rules, to reduce Futu region misclassification.
 
 ## 2026-06-22

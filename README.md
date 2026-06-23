@@ -37,9 +37,9 @@ the one to use day to day.
 
 ## Policy Groups
 
-The config defines four `url-test` policy groups:
+The config defines one stability-first Futu group and three automatic speed groups:
 
-- `FUTU_HK`: tests only the four explicit Hong Kong lines against a lightweight Futu HK endpoint; excludes the ambiguous overseas-direct node
+- `FUTU_HK`: uses `fallback` across four explicit Hong Kong lines against a lightweight Futu HK endpoint; this favors a stable Hong Kong exit and avoids frequent latency-based switching
 - `HK_AUTO`: tests Hong Kong nodes and uses the fastest available one
 - `US_AUTO`: tests US nodes and uses the fastest available one
 - `FAST_AUTO`: tests common available nodes and uses the fastest one
