@@ -5,7 +5,7 @@ time whenever a new app, website, or routing preference needs to be added.
 
 ## Subscription URL
 
-Use this URL in Shadowrocket as the unified daily remote config:
+Use this URL in Shadowrocket as the daily remote config:
 
 ```text
 https://raw.githubusercontent.com/Jafflin/shadowrocket-rules/main/shadowrocket-auto.conf
@@ -26,7 +26,7 @@ https://raw.githubusercontent.com/Jafflin/shadowrocket-rules/main/shadowrocket-f
 
 Main maintained config:
 
-- `shadowrocket-auto.conf` for unified daily use
+- `shadowrocket-auto.conf`
 - `shadowrocket-futu-strict.conf` for Futu strict mode
 - `shadowrocket-futu-balanced.conf` for Futu balanced mode
 
@@ -41,10 +41,9 @@ the one to use day to day.
 - Overseas social apps through the fastest available Hong Kong node
 - AI services through the fastest available US node
 - Futu / Futubull / Moomoo through a dedicated non-Hong-Kong overseas fallback group
-- Unknown traffic defaults to the Futu overseas group to avoid leakage through shared domains
 - Optional Futu strict mode sends all non-local traffic through the same overseas group
 - Optional Futu balanced mode keeps a small set of essential mainland apps direct
-- Broad mainland GeoIP, `.cn`, and cloud/CDN direct catch-all rules are intentionally avoided in the unified config
+- Futu-related overseas cloud/CDN endpoints stay above Tencent direct rules
 - WeChat, Tencent, and common mainland China apps directly
 - WeChat mini program and video media resources directly
 - Tencent Video, Tencent Sports, and related media traffic directly
@@ -79,18 +78,16 @@ Keep specific rules above broad fallback rules:
 5. AI
 6. Overseas social apps
 7. WeChat / Tencent and common mainland China direct rules
-8. Known mainland app direct rules
-9. `FINAL,FUTU_OVERSEAS`
+8. Mainland China `.cn` and `GEOIP,CN` direct rules
+9. `FINAL,FAST_AUTO`
 
 YouTube in-stream ads may share `googlevideo.com` with normal videos. The config
 does not reject that domain because doing so would break playback, so domain-level
 filtering cannot guarantee removal of every in-stream ad.
 
 The Futu / Futubull / Moomoo rules must stay above all mainland direct rules so
-they continue to use `FUTU_OVERSEAS`. The unified config intentionally avoids
-broad direct rules such as `GEOIP,CN`, `.cn`, `myqcloud.com`, `qcloud.com`, and
-`tencentyun.com`, because those rules can accidentally catch Futu shared
-infrastructure.
+they continue to use `FUTU_OVERSEAS`. Likely overseas Tencent Cloud and COS
+domains used by Futu-like traffic also stay above the broader Tencent direct block.
 
 If Futu still reports mainland China in the daily config, switch to
 `shadowrocket-futu-strict.conf`. Strict mode keeps only LAN/private network
