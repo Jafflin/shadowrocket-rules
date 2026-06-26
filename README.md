@@ -48,6 +48,7 @@ the one to use day to day.
 - WeChat mini program and video media resources directly
 - Tencent Video, Tencent Sports, and related media traffic directly
 - Meituan, Dianping, Xianyu, Alipay, Didi, and mainland stock apps directly
+- HSBC apps and websites directly
 - Common mainland China cloud and CDN providers directly
 - Mainland China `.cn` domains and China GeoIP traffic directly
 - Other traffic through the fastest available node group

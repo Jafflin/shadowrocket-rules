@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-06-26
+
+- Added direct routing for HSBC apps and websites, including HSBC Group, Hong Kong, China, Taiwan, Singapore, UK, Canada, US, HSBCnet, HSBC Private Bank, HSBC Life, and PayMe-related domains.
+
 ## 2026-06-23
 
 - Added `shadowrocket-futu-balanced.conf`, a middle-ground Futu profile that keeps local networks plus WeChat, Alipay, maps, Meituan, Dianping, and Didi direct while sending all other traffic through `FUTU_OVERSEAS`.
