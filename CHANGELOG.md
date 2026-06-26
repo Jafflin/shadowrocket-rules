@@ -2,6 +2,7 @@
 
 ## 2026-06-26
 
+- Added direct routing for major mainland China bank apps and websites, including large state-owned banks, joint-stock banks, and common city/rural commercial banks.
 - Added direct routing for HSBC apps and websites, including HSBC Group, Hong Kong, China, Taiwan, Singapore, UK, Canada, US, HSBCnet, HSBC Private Bank, HSBC Life, and PayMe-related domains.
 
 ## 2026-06-23
