@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-07-27
+
+- Added direct routing for Hong Kong iAM Smart / 智方便 and related Hong Kong government authentication domains, including `iamsmart.gov.hk`, `eid.gov.hk`, `digitalpolicy.gov.hk`, `ogcio.gov.hk`, and `gov.hk`.
+
 ## 2026-06-26
 
 - Added direct routing for major mainland China bank apps and websites, including large state-owned banks, joint-stock banks, and common city/rural commercial banks.
