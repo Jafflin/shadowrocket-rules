@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-07-30
+
+- Changed the main `shadowrocket-auto.conf` Futu / Futubull / Moomoo rules from `FUTU_OVERSEAS` to `DIRECT` because Futu now works correctly without proxying.
+- Removed the unused `FUTU_OVERSEAS` proxy group from the main config; legacy Futu strict and balanced profiles remain available as separate files.
+
 ## 2026-07-27
 
 - Added direct routing for Hong Kong iAM Smart / 智方便 and related Hong Kong government authentication domains, including `iamsmart.gov.hk`, `eid.gov.hk`, `digitalpolicy.gov.hk`, `ogcio.gov.hk`, and `gov.hk`.
