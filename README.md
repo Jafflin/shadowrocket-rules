@@ -11,6 +11,12 @@ Use this URL in Shadowrocket as the daily remote config:
 https://raw.githubusercontent.com/Jafflin/shadowrocket-rules/main/shadowrocket-auto.conf
 ```
 
+YAML version of the same main rules:
+
+```text
+https://raw.githubusercontent.com/Jafflin/shadowrocket-rules/main/shadowrocket-auto.yaml
+```
+
 Legacy Futu troubleshooting profile:
 
 ```text
@@ -26,6 +32,7 @@ https://raw.githubusercontent.com/Jafflin/shadowrocket-rules/main/shadowrocket-f
 Main maintained config:
 
 - `shadowrocket-auto.conf`
+- `shadowrocket-auto.yaml` for YAML-compatible clients
 - `shadowrocket-futu-strict.conf` for legacy Futu strict mode
 - `shadowrocket-futu-balanced.conf` for legacy Futu balanced mode
 
@@ -105,10 +112,11 @@ Add Xiaohongshu image/video domains as DIRECT.
 After each update:
 
 1. Edit `shadowrocket-auto.conf`
-2. Keep specific rules above broad rules
-3. Check for duplicate domains
-4. Commit and push to GitHub
-5. Verify the raw URL
+2. Regenerate `shadowrocket-auto.yaml`
+3. Keep specific rules above broad rules
+4. Check for duplicate domains
+5. Commit and push to GitHub
+6. Verify the raw URLs
 
 See `UPDATE_REQUEST.md` for a copyable request template and `CHANGELOG.md` for
 the update history.

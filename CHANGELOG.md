@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-08-10
+
+- Added `shadowrocket-auto.yaml`, a YAML version of the main routing rules with the same proxy groups and rule order as `shadowrocket-auto.conf`.
+
 ## 2026-07-30
 
 - Changed the main `shadowrocket-auto.conf` Futu / Futubull / Moomoo rules from `FUTU_OVERSEAS` to `DIRECT` because Futu now works correctly without proxying.
