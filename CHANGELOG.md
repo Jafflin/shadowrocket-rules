@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-08-24
+
+- Moved HSBC HK app and website rules near the top of the rule list, added HSBC HK app keywords and User-Agent rules, and regenerated the YAML version so HSBC HK traffic is forced to `DIRECT`.
+
 ## 2026-08-10
 
 - Added `shadowrocket-auto.yaml`, a YAML version of the main routing rules with the same proxy groups and rule order as `shadowrocket-auto.conf`.
