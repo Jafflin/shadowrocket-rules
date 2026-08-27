@@ -37,6 +37,10 @@ Assign `jaff-direct` to `DIRECT`, `jaff-hk` and `jaff-us` to `PROXY`, and
 proxy action for custom rules, so the HK and US sets use the currently selected
 proxy node rather than separate regional auto-test groups.
 
+The `rulesets` directory also mirrors the CN, IR, and RU GeoIP files and the CN
+geosite file from the official SagerNet sing-geoip/sing-geosite repositories so
+AnyNetGo's single custom mirror URL can update every locally enabled rule set.
+
 Legacy Futu troubleshooting profile:
 
 ```text

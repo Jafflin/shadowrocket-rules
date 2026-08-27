@@ -3,6 +3,7 @@
 ## 2026-08-27
 
 - Added compiled AnyNetGo `.srs` rule sets for direct, Hong Kong, United States, and reject policies, plus a reproducible generator sourced from the maintained Shadowrocket config.
+- Added the official SagerNet GeoIP/geosite files currently enabled by AnyNetGo so the custom mirror directory supports complete in-app updates.
 - Clarified that `anynetgo.json` is not a standalone AnyNetGo profile and must not be used as the App's `.srs` download-source URL.
 - Added `anynetgo.json`, a sing-box-style AnyNetGo routing config converted from the current main Shadowrocket rules.
 - Documented that the AnyNetGo config contains routing logic and proxy groups only; node credentials still need to come from the existing AnyNetGo account/subscription or be merged separately.
