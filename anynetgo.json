@@ -639,12 +639,13 @@
         ]
       }
     ],
-    "final": "FAST_AUTO"
+    "final": "DIRECT"
   },
   "anynetgo_notes": [
     "Routing-only AnyNetGo/sing-box-style config generated from shadowrocket-auto.conf.",
     "Proxy node credentials are not embedded here; they must come from your AnyNetGo subscription/account.",
     "Rules are compacted into grouped route blocks to reduce matching overhead.",
-    "FAST_AUTO is intentionally limited to nearby/common fast nodes to avoid slow cross-region fallback for daily traffic."
+    "FAST_AUTO is intentionally limited to nearby/common fast nodes for rules that explicitly use it.",
+    "Unmatched traffic uses DIRECT so WeChat and other mainland apps do not wait for domain or GeoIP classification before connecting."
   ]
 }

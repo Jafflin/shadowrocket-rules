@@ -80,9 +80,11 @@ names: `HK_AUTO`, `US_AUTO`, and `FAST_AUTO`. It does not include node
 credentials; those still need to come from the AnyNetGo account/subscription or
 be merged by the provider/client.
 
-For AnyNetGo, `FAST_AUTO` is intentionally narrower than the Shadowrocket
-version so daily fallback traffic tests fewer cross-region nodes and is less
-likely to pick a far-away route for ordinary browsing.
+For AnyNetGo, unmatched traffic uses `DIRECT`. This lets WeChat and other
+mainland apps connect immediately even when their first requests use an IP,
+QUIC, or an existing connection that cannot be classified by domain. Explicit
+streaming, AI, and overseas social rules still use `HK_AUTO`, `US_AUTO`, or the
+narrower `FAST_AUTO` group as configured.
 
 If your existing Shadowrocket config already has a final rule such as `FINAL` or `MATCH`, keep only one final rule and make it:
 
