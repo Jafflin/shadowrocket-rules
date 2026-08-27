@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-08-27
+
+- Added `anynetgo.json`, a sing-box-style AnyNetGo routing config converted from the current main Shadowrocket rules.
+- Documented that the AnyNetGo config contains routing logic and proxy groups only; node credentials still need to come from the existing AnyNetGo account/subscription or be merged separately.
+
 ## 2026-08-24
 
 - Moved HSBC HK app and website rules near the top of the rule list, added HSBC HK app keywords and User-Agent rules, and regenerated the YAML version so HSBC HK traffic is forced to `DIRECT`.

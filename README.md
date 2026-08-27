@@ -17,6 +17,12 @@ YAML version of the same main rules:
 https://raw.githubusercontent.com/Jafflin/shadowrocket-rules/main/shadowrocket-auto.yaml
 ```
 
+AnyNetGo / sing-box route config:
+
+```text
+https://raw.githubusercontent.com/Jafflin/shadowrocket-rules/main/anynetgo.json
+```
+
 Legacy Futu troubleshooting profile:
 
 ```text
@@ -33,6 +39,7 @@ Main maintained config:
 
 - `shadowrocket-auto.conf`
 - `shadowrocket-auto.yaml` for YAML-compatible clients
+- `anynetgo.json` for AnyNetGo / sing-box-compatible routing
 - `shadowrocket-futu-strict.conf` for legacy Futu strict mode
 - `shadowrocket-futu-balanced.conf` for legacy Futu balanced mode
 
@@ -66,6 +73,12 @@ The main config defines three automatic speed groups:
 - `HK_AUTO`: tests Hong Kong nodes and uses the fastest available one
 - `US_AUTO`: tests US nodes and uses the fastest available one
 - `FAST_AUTO`: tests common available nodes and uses the fastest one
+
+The AnyNetGo config is generated from the same routing policy. It converts
+Shadowrocket rules to sing-box route rules and keeps the same group names:
+`HK_AUTO`, `US_AUTO`, and `FAST_AUTO`. It does not include node credentials;
+those still need to come from the AnyNetGo account/subscription or be merged by
+the provider/client.
 
 If your existing Shadowrocket config already has a final rule such as `FINAL` or `MATCH`, keep only one final rule and make it:
 
@@ -112,7 +125,7 @@ Add Xiaohongshu image/video domains as DIRECT.
 After each update:
 
 1. Edit `shadowrocket-auto.conf`
-2. Regenerate `shadowrocket-auto.yaml`
+2. Regenerate `shadowrocket-auto.yaml` and `anynetgo.json`
 3. Keep specific rules above broad rules
 4. Check for duplicate domains
 5. Commit and push to GitHub
