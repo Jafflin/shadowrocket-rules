@@ -2,6 +2,8 @@
 
 ## 2026-08-27
 
+- Added compiled AnyNetGo `.srs` rule sets for direct, Hong Kong, United States, and reject policies, plus a reproducible generator sourced from the maintained Shadowrocket config.
+- Clarified that `anynetgo.json` is not a standalone AnyNetGo profile and must not be used as the App's `.srs` download-source URL.
 - Added `anynetgo.json`, a sing-box-style AnyNetGo routing config converted from the current main Shadowrocket rules.
 - Documented that the AnyNetGo config contains routing logic and proxy groups only; node credentials still need to come from the existing AnyNetGo account/subscription or be merged separately.
 - Optimized `anynetgo.json` for speed by compacting 447 individual route rules into 24 grouped route blocks, narrowing the AnyNetGo `FAST_AUTO` pool to nearby/common fast nodes, and reducing automatic retest frequency.

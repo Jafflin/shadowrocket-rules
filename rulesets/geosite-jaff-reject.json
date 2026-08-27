@@ -1,0 +1,23 @@
+{
+  "version": 3,
+  "rules": [
+    {
+      "domain_suffix": [
+        "2mdn.net",
+        "ad.youtube.com",
+        "admob.com",
+        "ads.youtube.com",
+        "doubleclick.net",
+        "googleadservices.com",
+        "googlesyndication.com",
+        "googletagmanager.com",
+        "googletagservices.com",
+        "imasdk.googleapis.com"
+      ],
+      "domain": [
+        "adservice.google.com",
+        "adservice.google.com.hk"
+      ]
+    }
+  ]
+}

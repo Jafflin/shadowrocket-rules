@@ -1,0 +1,26 @@
+{
+  "version": 3,
+  "rules": [
+    {
+      "domain_suffix": [
+        "ai.google.dev",
+        "aistudio.google.com",
+        "anthropic.com",
+        "bard.google.com",
+        "bing.com",
+        "bingapis.com",
+        "chatgpt.com",
+        "claude.ai",
+        "copilot.microsoft.com",
+        "gemini.google.com",
+        "generativelanguage.googleapis.com",
+        "googleapis.com",
+        "oaistatic.com",
+        "oaiusercontent.com",
+        "openai.com",
+        "perplexity.ai",
+        "poe.com"
+      ]
+    }
+  ]
+}

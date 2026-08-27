@@ -17,11 +17,25 @@ YAML version of the same main rules:
 https://raw.githubusercontent.com/Jafflin/shadowrocket-rules/main/shadowrocket-auto.yaml
 ```
 
-AnyNetGo / sing-box route config:
+Legacy AnyNetGo / sing-box route config (not a standalone AnyNetGo profile):
 
 ```text
 https://raw.githubusercontent.com/Jafflin/shadowrocket-rules/main/anynetgo.json
 ```
+
+AnyNetGo custom binary rule sets:
+
+```text
+https://raw.githubusercontent.com/Jafflin/shadowrocket-rules/main/rulesets/geosite-jaff-direct.srs
+https://raw.githubusercontent.com/Jafflin/shadowrocket-rules/main/rulesets/geosite-jaff-hk.srs
+https://raw.githubusercontent.com/Jafflin/shadowrocket-rules/main/rulesets/geosite-jaff-us.srs
+https://raw.githubusercontent.com/Jafflin/shadowrocket-rules/main/rulesets/geosite-jaff-reject.srs
+```
+
+Assign `jaff-direct` to `DIRECT`, `jaff-hk` and `jaff-us` to `PROXY`, and
+`jaff-reject` to `REJECT` in AnyNetGo. AnyNetGo currently exposes one generic
+proxy action for custom rules, so the HK and US sets use the currently selected
+proxy node rather than separate regional auto-test groups.
 
 Legacy Futu troubleshooting profile:
 
@@ -74,11 +88,15 @@ The main config defines three automatic speed groups:
 - `US_AUTO`: tests US nodes and uses the fastest available one
 - `FAST_AUTO`: tests common available nodes and uses the fastest one
 
-The AnyNetGo config is generated from the same routing policy. It compacts the
+The legacy AnyNetGo JSON is generated from the same routing policy. It compacts the
 Shadowrocket rules into grouped sing-box route blocks and keeps the same group
 names: `HK_AUTO`, `US_AUTO`, and `FAST_AUTO`. It does not include node
 credentials; those still need to come from the AnyNetGo account/subscription or
 be merged by the provider/client.
+
+Do not paste `anynetgo.json` into AnyNetGo's rule-set download source. That
+field expects a directory of compiled `.srs` files. Use the four binary rule-set
+URLs above through AnyNetGo's custom Geo rule-set interface instead.
 
 For AnyNetGo, unmatched traffic uses `DIRECT`. This lets WeChat and other
 mainland apps connect immediately even when their first requests use an IP,
