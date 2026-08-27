@@ -4,6 +4,7 @@
 
 - Added `anynetgo.json`, a sing-box-style AnyNetGo routing config converted from the current main Shadowrocket rules.
 - Documented that the AnyNetGo config contains routing logic and proxy groups only; node credentials still need to come from the existing AnyNetGo account/subscription or be merged separately.
+- Optimized `anynetgo.json` for speed by compacting 447 individual route rules into 24 grouped route blocks, narrowing the AnyNetGo `FAST_AUTO` pool to nearby/common fast nodes, and reducing automatic retest frequency.
 
 ## 2026-08-24
 

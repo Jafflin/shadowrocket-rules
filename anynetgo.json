@@ -36,7 +36,7 @@
         "Xray VMess：海外直连 | 香港"
       ],
       "url": "http://www.gstatic.com/generate_204",
-      "interval": "600s",
+      "interval": "900s",
       "tolerance": 50
     },
     {
@@ -49,28 +49,22 @@
         "Xray VMess：CU | 美国04 - 解锁流媒体"
       ],
       "url": "http://www.gstatic.com/generate_204",
-      "interval": "600s",
+      "interval": "900s",
       "tolerance": 50
     },
     {
       "type": "urltest",
       "tag": "FAST_AUTO",
       "outbounds": [
-        "SS-Rust：IEPL | 美国01-解锁流媒体",
         "SS-Rust：CU | 新加坡02 | 解锁流媒体",
-        "Xray VMess：CU | 香港05 - 解锁流媒体",
         "SS-Rust：IEPL | 新加坡 | 解锁流媒体",
-        "SS-Rust：IEPL-马来西亚",
+        "Xray VMess：CU | 香港05 - 解锁流媒体",
         "Xray VMess：IEPL-香港01 - 解锁流媒体",
-        "SS-Rust：CT | 美国03 - 解锁流媒体",
-        "Xray VMess：CU | 美国04 - 解锁流媒体",
         "Xray VMess：CU | 日本01",
-        "SS-Rust：CM | 日本02",
-        "Xray VMess：CU | 荷兰 - 解锁流媒体",
-        "SS-Rust：CM | 印尼丨解锁流媒体"
+        "SS-Rust：IEPL | 美国01-解锁流媒体"
       ],
       "url": "http://www.gstatic.com/generate_204",
-      "interval": "600s",
+      "interval": "1800s",
       "tolerance": 50
     }
   ],
@@ -80,600 +74,155 @@
       {
         "outbound": "DIRECT",
         "domain_suffix": [
-          "local"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "lan"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
+          "local",
+          "lan",
           "home.arpa"
         ]
       },
       {
         "outbound": "DIRECT",
         "ip_cidr": [
-          "127.0.0.0/8"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "ip_cidr": [
-          "10.0.0.0/8"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "ip_cidr": [
-          "172.16.0.0/12"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "ip_cidr": [
-          "192.168.0.0/16"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "ip_cidr": [
-          "169.254.0.0/16"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "ip_cidr": [
-          "100.64.0.0/10"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "ip_cidr": [
+          "127.0.0.0/8",
+          "10.0.0.0/8",
+          "172.16.0.0/12",
+          "192.168.0.0/16",
+          "169.254.0.0/16",
+          "100.64.0.0/10",
           "224.0.0.0/4"
         ]
       },
       {
         "outbound": "DIRECT",
         "domain_suffix": [
-          "hsbc.com.hk"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "www.hsbc.com.hk"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "online-banking.hsbc.com.hk"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "hsbc.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "hsbc.com.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "hsbc.com.tw"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "hsbc.com.sg"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "hsbc.co.uk"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "hsbc.ca"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "us.hsbc.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "hsbcnet.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "hsbcprivatebank.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "about.hsbc.com.hk"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "payme.hsbc.com.hk"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
+          "hsbc.com.hk",
+          "www.hsbc.com.hk",
+          "online-banking.hsbc.com.hk",
+          "hsbc.com",
+          "hsbc.com.cn",
+          "hsbc.com.tw",
+          "hsbc.com.sg",
+          "hsbc.co.uk",
+          "hsbc.ca",
+          "us.hsbc.com",
+          "hsbcnet.com",
+          "hsbcprivatebank.com",
+          "about.hsbc.com.hk",
+          "payme.hsbc.com.hk",
           "life.hsbc.com"
         ]
       },
       {
         "outbound": "DIRECT",
         "domain_keyword": [
-          "hsbc"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_keyword": [
-          "hsbchk"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_keyword": [
-          "hsbc-hk"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_keyword": [
+          "hsbc",
+          "hsbchk",
+          "hsbc-hk",
           "hsbchkmobilebanking"
         ]
       },
       {
         "outbound": "DIRECT",
         "user_agent": [
-          "*HSBC*"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "user_agent": [
-          "*HSBCHK*"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "user_agent": [
+          "*HSBC*",
+          "*HSBCHK*",
           "*HSBC*HK*"
         ]
       },
       {
         "outbound": "REJECT",
         "domain_suffix": [
-          "ads.youtube.com"
-        ]
-      },
-      {
-        "outbound": "REJECT",
-        "domain_suffix": [
-          "ad.youtube.com"
-        ]
-      },
-      {
-        "outbound": "REJECT",
-        "domain_suffix": [
-          "doubleclick.net"
-        ]
-      },
-      {
-        "outbound": "REJECT",
-        "domain_suffix": [
-          "googleadservices.com"
-        ]
-      },
-      {
-        "outbound": "REJECT",
-        "domain_suffix": [
-          "googlesyndication.com"
-        ]
-      },
-      {
-        "outbound": "REJECT",
-        "domain_suffix": [
-          "googletagservices.com"
-        ]
-      },
-      {
-        "outbound": "REJECT",
-        "domain_suffix": [
-          "googletagmanager.com"
-        ]
-      },
-      {
-        "outbound": "REJECT",
-        "domain_suffix": [
-          "2mdn.net"
-        ]
-      },
-      {
-        "outbound": "REJECT",
-        "domain_suffix": [
-          "admob.com"
-        ]
-      },
-      {
-        "outbound": "REJECT",
-        "domain_suffix": [
+          "ads.youtube.com",
+          "ad.youtube.com",
+          "doubleclick.net",
+          "googleadservices.com",
+          "googlesyndication.com",
+          "googletagservices.com",
+          "googletagmanager.com",
+          "2mdn.net",
+          "admob.com",
           "imasdk.googleapis.com"
         ]
       },
       {
         "outbound": "REJECT",
         "domain": [
-          "adservice.google.com"
-        ]
-      },
-      {
-        "outbound": "REJECT",
-        "domain": [
+          "adservice.google.com",
           "adservice.google.com.hk"
         ]
       },
       {
         "outbound": "DIRECT",
         "domain_suffix": [
-          "futunn.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "futunn.com.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "futuhk.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "futuholdings.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "futusecurities.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "futubull.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "futu5.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "futustatic.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "moomoo.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "moomoo.io"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "futu.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "futu-inc.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "futusg.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "futuau.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "futufund.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "futuwallet.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "futucdn.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
+          "futunn.com",
+          "futunn.com.cn",
+          "futuhk.com",
+          "futuholdings.com",
+          "futusecurities.com",
+          "futubull.com",
+          "futu5.com",
+          "futustatic.com",
+          "moomoo.com",
+          "moomoo.io",
+          "futu.com",
+          "futu-inc.com",
+          "futusg.com",
+          "futuau.com",
+          "futufund.com",
+          "futuwallet.com",
+          "futucdn.com",
           "futuglobal.com"
         ]
       },
       {
         "outbound": "DIRECT",
         "domain_keyword": [
-          "futu"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_keyword": [
-          "futunn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_keyword": [
+          "futu",
+          "futunn",
           "moomoo"
         ]
       },
       {
         "outbound": "DIRECT",
         "domain_suffix": [
-          "cos.ap-singapore.myqcloud.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "cos.ap-singapore.tencentcos.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "cos.ap-singapore.tencentcos.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "ap-singapore.myqcloud.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "ap-singapore.tencentcos.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "ap-singapore.tencentcos.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "cos.ap-tokyo.myqcloud.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "cos.ap-tokyo.tencentcos.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "cos.ap-tokyo.tencentcos.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "ap-tokyo.myqcloud.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "ap-tokyo.tencentcos.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "ap-tokyo.tencentcos.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "cos.na-siliconvalley.myqcloud.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "cos.na-siliconvalley.tencentcos.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "cos.na-siliconvalley.tencentcos.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "na-siliconvalley.myqcloud.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "na-siliconvalley.tencentcos.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
+          "cos.ap-singapore.myqcloud.com",
+          "cos.ap-singapore.tencentcos.cn",
+          "cos.ap-singapore.tencentcos.com",
+          "ap-singapore.myqcloud.com",
+          "ap-singapore.tencentcos.cn",
+          "ap-singapore.tencentcos.com",
+          "cos.ap-tokyo.myqcloud.com",
+          "cos.ap-tokyo.tencentcos.cn",
+          "cos.ap-tokyo.tencentcos.com",
+          "ap-tokyo.myqcloud.com",
+          "ap-tokyo.tencentcos.cn",
+          "ap-tokyo.tencentcos.com",
+          "cos.na-siliconvalley.myqcloud.com",
+          "cos.na-siliconvalley.tencentcos.cn",
+          "cos.na-siliconvalley.tencentcos.com",
+          "na-siliconvalley.myqcloud.com",
+          "na-siliconvalley.tencentcos.cn",
           "na-siliconvalley.tencentcos.com"
         ]
       },
       {
         "outbound": "HK_AUTO",
         "domain_suffix": [
-          "netflix.com"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_suffix": [
-          "netflix.net"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_suffix": [
-          "nflxext.com"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_suffix": [
-          "nflximg.com"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_suffix": [
-          "nflximg.net"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_suffix": [
-          "nflxso.net"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_suffix": [
-          "nflxvideo.net"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_suffix": [
-          "disneyplus.com"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_suffix": [
-          "disney-plus.net"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_suffix": [
-          "disneystreaming.com"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_suffix": [
-          "dssott.com"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_suffix": [
-          "bamgrid.com"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_suffix": [
-          "primevideo.com"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_suffix": [
-          "amazonvideo.com"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_suffix": [
-          "media-amazon.com"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_suffix": [
-          "pv-cdn.net"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_suffix": [
+          "netflix.com",
+          "netflix.net",
+          "nflxext.com",
+          "nflximg.com",
+          "nflximg.net",
+          "nflxso.net",
+          "nflxvideo.net",
+          "disneyplus.com",
+          "disney-plus.net",
+          "disneystreaming.com",
+          "dssott.com",
+          "bamgrid.com",
+          "primevideo.com",
+          "amazonvideo.com",
+          "media-amazon.com",
+          "pv-cdn.net",
           "aiv-cdn.net"
         ]
       },
@@ -686,2080 +235,416 @@
       {
         "outbound": "HK_AUTO",
         "domain_suffix": [
-          "hulu.com"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_suffix": [
-          "huluim.com"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_suffix": [
-          "hbomax.com"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_suffix": [
-          "max.com"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_suffix": [
-          "hotstar.com"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_suffix": [
-          "viu.com"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_suffix": [
-          "viu.tv"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_suffix": [
-          "spotify.com"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_suffix": [
+          "hulu.com",
+          "huluim.com",
+          "hbomax.com",
+          "max.com",
+          "hotstar.com",
+          "viu.com",
+          "viu.tv",
+          "spotify.com",
           "scdn.co"
         ]
       },
       {
         "outbound": "US_AUTO",
         "domain_suffix": [
-          "openai.com"
-        ]
-      },
-      {
-        "outbound": "US_AUTO",
-        "domain_suffix": [
-          "chatgpt.com"
-        ]
-      },
-      {
-        "outbound": "US_AUTO",
-        "domain_suffix": [
-          "oaistatic.com"
-        ]
-      },
-      {
-        "outbound": "US_AUTO",
-        "domain_suffix": [
-          "oaiusercontent.com"
-        ]
-      },
-      {
-        "outbound": "US_AUTO",
-        "domain_suffix": [
-          "gemini.google.com"
-        ]
-      },
-      {
-        "outbound": "US_AUTO",
-        "domain_suffix": [
-          "ai.google.dev"
-        ]
-      },
-      {
-        "outbound": "US_AUTO",
-        "domain_suffix": [
-          "aistudio.google.com"
-        ]
-      },
-      {
-        "outbound": "US_AUTO",
-        "domain_suffix": [
-          "generativelanguage.googleapis.com"
-        ]
-      },
-      {
-        "outbound": "US_AUTO",
-        "domain_suffix": [
-          "bard.google.com"
-        ]
-      },
-      {
-        "outbound": "US_AUTO",
-        "domain_suffix": [
-          "googleapis.com"
-        ]
-      },
-      {
-        "outbound": "US_AUTO",
-        "domain_suffix": [
-          "anthropic.com"
-        ]
-      },
-      {
-        "outbound": "US_AUTO",
-        "domain_suffix": [
-          "claude.ai"
-        ]
-      },
-      {
-        "outbound": "US_AUTO",
-        "domain_suffix": [
-          "perplexity.ai"
-        ]
-      },
-      {
-        "outbound": "US_AUTO",
-        "domain_suffix": [
-          "poe.com"
-        ]
-      },
-      {
-        "outbound": "US_AUTO",
-        "domain_suffix": [
-          "copilot.microsoft.com"
-        ]
-      },
-      {
-        "outbound": "US_AUTO",
-        "domain_suffix": [
-          "bing.com"
-        ]
-      },
-      {
-        "outbound": "US_AUTO",
-        "domain_suffix": [
+          "openai.com",
+          "chatgpt.com",
+          "oaistatic.com",
+          "oaiusercontent.com",
+          "gemini.google.com",
+          "ai.google.dev",
+          "aistudio.google.com",
+          "generativelanguage.googleapis.com",
+          "bard.google.com",
+          "googleapis.com",
+          "anthropic.com",
+          "claude.ai",
+          "perplexity.ai",
+          "poe.com",
+          "copilot.microsoft.com",
+          "bing.com",
           "bingapis.com"
         ]
       },
       {
         "outbound": "HK_AUTO",
         "domain_suffix": [
-          "whatsapp.com"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_suffix": [
-          "whatsapp.net"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_suffix": [
-          "wa.me"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_suffix": [
-          "facebook.com"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_suffix": [
-          "facebook.net"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_suffix": [
-          "fb.com"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_suffix": [
-          "fbcdn.net"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_suffix": [
-          "fbsbx.com"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_suffix": [
-          "messenger.com"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_suffix": [
-          "instagram.com"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_suffix": [
-          "cdninstagram.com"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_suffix": [
-          "threads.net"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_suffix": [
-          "meta.com"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_suffix": [
-          "horizon.meta.com"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_suffix": [
-          "oculus.com"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_suffix": [
-          "oculuscdn.com"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_suffix": [
-          "linkedin.com"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_suffix": [
-          "licdn.com"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_suffix": [
-          "line.me"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_suffix": [
-          "line-apps.com"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_suffix": [
-          "line-scdn.net"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_suffix": [
-          "lin.ee"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_suffix": [
-          "telegram.org"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_suffix": [
-          "telegram.me"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_suffix": [
-          "t.me"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_suffix": [
-          "telegra.ph"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_suffix": [
-          "kickstarter.com"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_suffix": [
-          "kck.st"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_suffix": [
-          "signal.org"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_suffix": [
-          "whispersystems.org"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_suffix": [
-          "discord.com"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_suffix": [
-          "discord.gg"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_suffix": [
-          "discordapp.com"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_suffix": [
-          "discordapp.net"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_suffix": [
-          "x.com"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_suffix": [
-          "twitter.com"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_suffix": [
-          "t.co"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_suffix": [
+          "whatsapp.com",
+          "whatsapp.net",
+          "wa.me",
+          "facebook.com",
+          "facebook.net",
+          "fb.com",
+          "fbcdn.net",
+          "fbsbx.com",
+          "messenger.com",
+          "instagram.com",
+          "cdninstagram.com",
+          "threads.net",
+          "meta.com",
+          "horizon.meta.com",
+          "oculus.com",
+          "oculuscdn.com",
+          "linkedin.com",
+          "licdn.com",
+          "line.me",
+          "line-apps.com",
+          "line-scdn.net",
+          "lin.ee",
+          "telegram.org",
+          "telegram.me",
+          "t.me",
+          "telegra.ph",
+          "kickstarter.com",
+          "kck.st",
+          "signal.org",
+          "whispersystems.org",
+          "discord.com",
+          "discord.gg",
+          "discordapp.com",
+          "discordapp.net",
+          "x.com",
+          "twitter.com",
+          "t.co",
           "twimg.com"
         ]
       },
       {
         "outbound": "HK_AUTO",
         "domain_keyword": [
-          "whatsapp"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_keyword": [
-          "facebook"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_keyword": [
-          "instagram"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_keyword": [
-          "telegram"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_keyword": [
-          "discord"
-        ]
-      },
-      {
-        "outbound": "HK_AUTO",
-        "domain_keyword": [
+          "whatsapp",
+          "facebook",
+          "instagram",
+          "telegram",
+          "discord",
           "kickstarter"
         ]
       },
       {
         "outbound": "DIRECT",
         "domain_suffix": [
-          "wechat.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "wechatapp.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "wechatpay.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "weixin.qq.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "weixinbridge.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "weixinsxy.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "wx.qq.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "wxapp.tc.qq.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "wxapp.tc.qq.com.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "servicewechat.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "miniprogram.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "wechatlegal.net"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "qq.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "tenpay.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "qpic.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "qlogo.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "qlogo.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "gtimg.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "gtimg.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "idqqimg.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "imtt.qq.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "smtcdns.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "cdntips.net"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "cdntip.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "url.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "myqcloud.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "qcloud.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "qcloudcdn.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "qcloudimg.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "qcloud.la"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "tcb.qcloud.la"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "tencent-cloud.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "tencent.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "tencent-cloud.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "tencent-cloud.net"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "tencentcs.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "tencentyun.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "tencentyun.net"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "tencentcos.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "tencentvideo.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "qqlive.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "video.qq.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "v.qq.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "sports.qq.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "news.qq.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "kandian.qq.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "wetv.vip"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "wegame.com.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "wegame.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "weishi.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "cos.ap-guangzhou.myqcloud.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "cos.ap-shanghai.myqcloud.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
+          "wechat.com",
+          "wechatapp.com",
+          "wechatpay.com",
+          "weixin.qq.com",
+          "weixinbridge.com",
+          "weixinsxy.com",
+          "wx.qq.com",
+          "wxapp.tc.qq.com",
+          "wxapp.tc.qq.com.cn",
+          "servicewechat.com",
+          "miniprogram.com",
+          "wechatlegal.net",
+          "qq.com",
+          "tenpay.com",
+          "qpic.cn",
+          "qlogo.cn",
+          "qlogo.com",
+          "gtimg.com",
+          "gtimg.cn",
+          "idqqimg.com",
+          "imtt.qq.com",
+          "smtcdns.com",
+          "cdntips.net",
+          "cdntip.com",
+          "url.cn",
+          "myqcloud.com",
+          "qcloud.com",
+          "qcloudcdn.com",
+          "qcloudimg.com",
+          "qcloud.la",
+          "tcb.qcloud.la",
+          "tencent-cloud.cn",
+          "tencent.com",
+          "tencent-cloud.com",
+          "tencent-cloud.net",
+          "tencentcs.com",
+          "tencentyun.com",
+          "tencentyun.net",
+          "tencentcos.com",
+          "tencentvideo.com",
+          "qqlive.com",
+          "video.qq.com",
+          "v.qq.com",
+          "sports.qq.com",
+          "news.qq.com",
+          "kandian.qq.com",
+          "wetv.vip",
+          "wegame.com.cn",
+          "wegame.com",
+          "weishi.com",
+          "cos.ap-guangzhou.myqcloud.com",
+          "cos.ap-shanghai.myqcloud.com",
           "cos.ap-beijing.myqcloud.com"
         ]
       },
       {
         "outbound": "DIRECT",
         "domain_keyword": [
-          "wechat"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_keyword": [
-          "weixin"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_keyword": [
-          "wxvideo"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_keyword": [
-          "mpvideo"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_keyword": [
-          "qcloudvod"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_keyword": [
-          "tencentvideo"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_keyword": [
-          "qqlive"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_keyword": [
-          "qqvideo"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_keyword": [
-          "qqsport"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_keyword": [
+          "wechat",
+          "weixin",
+          "wxvideo",
+          "mpvideo",
+          "qcloudvod",
+          "tencentvideo",
+          "qqlive",
+          "qqvideo",
+          "qqsport",
           "tencentsport"
         ]
       },
       {
         "outbound": "DIRECT",
         "domain_suffix": [
-          "alibaba.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "alibaba-inc.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "alicdn.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "aliyun.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "alipay.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "alipayobjects.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "antgroup.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "antfin.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "koubei.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "taobao.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "tmall.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "tmall.hk"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "goofish.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "xianyu.aliyun.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "1688.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "amap.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "autonavi.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "ele.me"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "fliggy.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "uc.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "ucweb.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "baidu.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "bdimg.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "bdstatic.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "baidubce.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "hao123.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "bytedance.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "byteimg.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "bytecdn.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "douyin.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "douyincdn.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "douyinpic.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "iesdouyin.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "ixigua.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "toutiao.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "toutiaostatic.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "feishu.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "larksuite.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "jd.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "jd.hk"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "jdpay.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "360buyimg.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "meituan.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "meituan.net"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "meituanimg.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "sankuai.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "dianping.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "dpfile.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "maoyan.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "mobike.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "didi.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "didialift.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "didiglobal.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "xiaojukeji.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "ctrip.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "trip.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "qunar.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "12306.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "eastmoney.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "dfcfw.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "10jqka.com.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "10jqka.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "hexun.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "jrj.com.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "xueqiu.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "snowballsecurities.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "wallstreetcn.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "cls.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "stcn.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "cnstock.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "bilibili.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "biliapi.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "biliapi.net"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "biligame.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "hdslb.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "xiaohongshu.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "xhscdn.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "weibo.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "weibocdn.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "zhihu.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "zhimg.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "kuaishou.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "kuaishouzt.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "ksyuncdn.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "163.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "126.net"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "netease.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "sohu.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "sina.com.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "sinaimg.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "360.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "360.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "360safe.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "huawei.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "hicloud.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "hihonor.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "xiaomi.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "mi.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "miui.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "oppomobile.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "heytapmobi.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "vivo.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "vivo.com.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "iamsmart.gov.hk"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "eid.gov.hk"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "digitalpolicy.gov.hk"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "ogcio.gov.hk"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
+          "alibaba.com",
+          "alibaba-inc.com",
+          "alicdn.com",
+          "aliyun.com",
+          "alipay.com",
+          "alipayobjects.com",
+          "antgroup.com",
+          "antfin.com",
+          "koubei.com",
+          "taobao.com",
+          "tmall.com",
+          "tmall.hk",
+          "goofish.com",
+          "xianyu.aliyun.com",
+          "1688.com",
+          "amap.com",
+          "autonavi.com",
+          "ele.me",
+          "fliggy.com",
+          "uc.cn",
+          "ucweb.com",
+          "baidu.com",
+          "bdimg.com",
+          "bdstatic.com",
+          "baidubce.com",
+          "hao123.com",
+          "bytedance.com",
+          "byteimg.com",
+          "bytecdn.cn",
+          "douyin.com",
+          "douyincdn.com",
+          "douyinpic.com",
+          "iesdouyin.com",
+          "ixigua.com",
+          "toutiao.com",
+          "toutiaostatic.com",
+          "feishu.cn",
+          "larksuite.com",
+          "jd.com",
+          "jd.hk",
+          "jdpay.com",
+          "360buyimg.com",
+          "meituan.com",
+          "meituan.net",
+          "meituanimg.com",
+          "sankuai.com",
+          "dianping.com",
+          "dpfile.com",
+          "maoyan.com",
+          "mobike.com",
+          "didi.cn",
+          "didialift.com",
+          "didiglobal.com",
+          "xiaojukeji.com",
+          "ctrip.com",
+          "trip.com",
+          "qunar.com",
+          "12306.cn",
+          "eastmoney.com",
+          "dfcfw.com",
+          "10jqka.com.cn",
+          "10jqka.com",
+          "hexun.com",
+          "jrj.com.cn",
+          "xueqiu.com",
+          "snowballsecurities.com",
+          "wallstreetcn.com",
+          "cls.cn",
+          "stcn.com",
+          "cnstock.com",
+          "bilibili.com",
+          "biliapi.com",
+          "biliapi.net",
+          "biligame.com",
+          "hdslb.com",
+          "xiaohongshu.com",
+          "xhscdn.com",
+          "weibo.com",
+          "weibocdn.com",
+          "zhihu.com",
+          "zhimg.com",
+          "kuaishou.com",
+          "kuaishouzt.com",
+          "ksyuncdn.com",
+          "163.com",
+          "126.net",
+          "netease.com",
+          "sohu.com",
+          "sina.com.cn",
+          "sinaimg.cn",
+          "360.cn",
+          "360.com",
+          "360safe.com",
+          "huawei.com",
+          "hicloud.com",
+          "hihonor.com",
+          "xiaomi.com",
+          "mi.com",
+          "miui.com",
+          "oppomobile.com",
+          "heytapmobi.com",
+          "vivo.com",
+          "vivo.com.cn",
+          "iamsmart.gov.hk",
+          "eid.gov.hk",
+          "digitalpolicy.gov.hk",
+          "ogcio.gov.hk",
           "gov.hk"
         ]
       },
       {
         "outbound": "DIRECT",
         "domain_keyword": [
-          "iamsmart"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_keyword": [
+          "iamsmart",
           "iam-smart"
         ]
       },
       {
         "outbound": "DIRECT",
         "domain_suffix": [
-          "10010.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "10086.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "189.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "95516.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "unionpay.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "chinapay.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "icbc.com.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "ccb.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "ccb.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "abchina.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "boc.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "bankofchina.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "cmbchina.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "cmbimg.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "bankcomm.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "bankcomm.com.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "psbc.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "psbc.com.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "cib.com.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "spdb.com.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "spdbccc.com.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "cmbc.com.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "cebbank.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "cebbank.com.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "citicbank.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "citicbank.com.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "ecitic.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "pingan.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "bank.pingan.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "pinganbank.com.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "hxb.com.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "hxbank.com.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "cgbchina.com.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "cgbchina.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "czbank.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "czbank.com.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "bjbank.com.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "bankofbeijing.com.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "shbank.com.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "bosc.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "nbcb.com.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "bankofningbo.com.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "bankofshanghai.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "srcb.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "bankofjiangsu.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "jsbchina.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "czcb.com.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "bankofchangsha.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "csbank.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "hrbb.com.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "dlbank.com.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "qdccb.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "qdccb.com.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "hzbank.com.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "bankofhangzhou.com.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "hsbank.com.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "bankofhs.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "czrcb.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "szrcb.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "grcbank.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "grcbank.com.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "bankofguangzhou.com.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "bankofchengdu.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "cdrcb.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "cqcbank.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
+          "10010.com",
+          "10086.cn",
+          "189.cn",
+          "95516.com",
+          "unionpay.com",
+          "chinapay.com",
+          "icbc.com.cn",
+          "ccb.com",
+          "ccb.cn",
+          "abchina.com",
+          "boc.cn",
+          "bankofchina.com",
+          "cmbchina.com",
+          "cmbimg.com",
+          "bankcomm.com",
+          "bankcomm.com.cn",
+          "psbc.com",
+          "psbc.com.cn",
+          "cib.com.cn",
+          "spdb.com.cn",
+          "spdbccc.com.cn",
+          "cmbc.com.cn",
+          "cebbank.com",
+          "cebbank.com.cn",
+          "citicbank.com",
+          "citicbank.com.cn",
+          "ecitic.com",
+          "pingan.com",
+          "bank.pingan.com",
+          "pinganbank.com.cn",
+          "hxb.com.cn",
+          "hxbank.com.cn",
+          "cgbchina.com.cn",
+          "cgbchina.com",
+          "czbank.com",
+          "czbank.com.cn",
+          "bjbank.com.cn",
+          "bankofbeijing.com.cn",
+          "shbank.com.cn",
+          "bosc.cn",
+          "nbcb.com.cn",
+          "bankofningbo.com.cn",
+          "bankofshanghai.com",
+          "srcb.com",
+          "bankofjiangsu.com",
+          "jsbchina.cn",
+          "czcb.com.cn",
+          "bankofchangsha.com",
+          "csbank.cn",
+          "hrbb.com.cn",
+          "dlbank.com.cn",
+          "qdccb.com",
+          "qdccb.com.cn",
+          "hzbank.com.cn",
+          "bankofhangzhou.com.cn",
+          "hsbank.com.cn",
+          "bankofhs.com",
+          "czrcb.com",
+          "szrcb.com",
+          "grcbank.com",
+          "grcbank.com.cn",
+          "bankofguangzhou.com.cn",
+          "bankofchengdu.com",
+          "cdrcb.com",
+          "cqcbank.com",
           "cqrcb.com"
         ]
       },
       {
         "outbound": "DIRECT",
         "domain_keyword": [
-          "icbc"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_keyword": [
-          "abchina"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_keyword": [
-          "ccb"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_keyword": [
-          "cmbchina"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_keyword": [
-          "bankcomm"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_keyword": [
-          "psbc"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_keyword": [
-          "spdb"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_keyword": [
-          "cmbc"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_keyword": [
-          "cebbank"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_keyword": [
-          "citicbank"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_keyword": [
+          "icbc",
+          "abchina",
+          "ccb",
+          "cmbchina",
+          "bankcomm",
+          "psbc",
+          "spdb",
+          "cmbc",
+          "cebbank",
+          "citicbank",
           "pinganbank"
         ]
       },
       {
         "outbound": "DIRECT",
         "domain_suffix": [
-          "aliyuncs.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "aliyuncdn.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "alibabacloud.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "alicloudapi.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "huaweicloud.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "myhuaweicloud.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "ksyun.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "ksyuncs.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "ksyunacc.cn"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "upyun.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "upaiyun.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "qiniu.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "qiniucdn.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "qiniudn.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "clouddn.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "qnssl.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "bdydns.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "volces.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "volcengine.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "bytecdntp.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "bytegoofy.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "chinanetcenter.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "wangsu.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
-          "wscloudcdn.com"
-        ]
-      },
-      {
-        "outbound": "DIRECT",
-        "domain_suffix": [
+          "aliyuncs.com",
+          "aliyuncdn.com",
+          "alibabacloud.com",
+          "alicloudapi.com",
+          "huaweicloud.com",
+          "myhuaweicloud.com",
+          "ksyun.com",
+          "ksyuncs.com",
+          "ksyunacc.cn",
+          "upyun.com",
+          "upaiyun.com",
+          "qiniu.com",
+          "qiniucdn.com",
+          "qiniudn.com",
+          "clouddn.com",
+          "qnssl.com",
+          "bdydns.com",
+          "volces.com",
+          "volcengine.com",
+          "bytecdntp.com",
+          "bytegoofy.com",
+          "chinanetcenter.com",
+          "wangsu.com",
+          "wscloudcdn.com",
           "cn"
         ]
       },
       {
         "outbound": "DIRECT",
         "geoip": [
-          "cn"
+          "CN"
         ]
       }
     ],
     "final": "FAST_AUTO"
-  }
+  },
+  "anynetgo_notes": [
+    "Routing-only AnyNetGo/sing-box-style config generated from shadowrocket-auto.conf.",
+    "Proxy node credentials are not embedded here; they must come from your AnyNetGo subscription/account.",
+    "Rules are compacted into grouped route blocks to reduce matching overhead.",
+    "FAST_AUTO is intentionally limited to nearby/common fast nodes to avoid slow cross-region fallback for daily traffic."
+  ]
 }

@@ -74,11 +74,15 @@ The main config defines three automatic speed groups:
 - `US_AUTO`: tests US nodes and uses the fastest available one
 - `FAST_AUTO`: tests common available nodes and uses the fastest one
 
-The AnyNetGo config is generated from the same routing policy. It converts
-Shadowrocket rules to sing-box route rules and keeps the same group names:
-`HK_AUTO`, `US_AUTO`, and `FAST_AUTO`. It does not include node credentials;
-those still need to come from the AnyNetGo account/subscription or be merged by
-the provider/client.
+The AnyNetGo config is generated from the same routing policy. It compacts the
+Shadowrocket rules into grouped sing-box route blocks and keeps the same group
+names: `HK_AUTO`, `US_AUTO`, and `FAST_AUTO`. It does not include node
+credentials; those still need to come from the AnyNetGo account/subscription or
+be merged by the provider/client.
+
+For AnyNetGo, `FAST_AUTO` is intentionally narrower than the Shadowrocket
+version so daily fallback traffic tests fewer cross-region nodes and is less
+likely to pick a far-away route for ordinary browsing.
 
 If your existing Shadowrocket config already has a final rule such as `FINAL` or `MATCH`, keep only one final rule and make it:
 
