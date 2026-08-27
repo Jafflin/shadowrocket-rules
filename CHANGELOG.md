@@ -6,6 +6,7 @@
 - Documented that the AnyNetGo config contains routing logic and proxy groups only; node credentials still need to come from the existing AnyNetGo account/subscription or be merged separately.
 - Optimized `anynetgo.json` for speed by compacting 447 individual route rules into 24 grouped route blocks, narrowing the AnyNetGo `FAST_AUTO` pool to nearby/common fast nodes, and reducing automatic retest frequency.
 - Changed the AnyNetGo final route to `DIRECT` so WeChat and other mainland apps can establish initial IP/QUIC connections immediately; explicitly matched overseas services still use their assigned proxy groups.
+- Set AnyNetGo DNS to IPv4-only with reverse mapping to reduce Tencent/WeChat short-video startup stalls caused by unreliable IPv6 paths and improve direct CDN classification.
 
 ## 2026-08-24
 

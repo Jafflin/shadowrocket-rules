@@ -86,6 +86,10 @@ QUIC, or an existing connection that cannot be classified by domain. Explicit
 streaming, AI, and overseas social rules still use `HK_AUTO`, `US_AUTO`, or the
 narrower `FAST_AUTO` group as configured.
 
+The AnyNetGo profile uses IPv4-only DNS answers and DNS reverse mapping. This
+avoids slow startup on unreliable IPv6 paths and helps Tencent/WeChat video CDN
+connections retain their domain identity when they are routed to `DIRECT`.
+
 If your existing Shadowrocket config already has a final rule such as `FINAL` or `MATCH`, keep only one final rule and make it:
 
 ```ini

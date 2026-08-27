@@ -9,7 +9,9 @@
         "address": "local"
       }
     ],
-    "final": "system"
+    "final": "system",
+    "strategy": "ipv4_only",
+    "reverse_mapping": true
   },
   "experimental": {
     "cache_file": {
@@ -646,6 +648,7 @@
     "Proxy node credentials are not embedded here; they must come from your AnyNetGo subscription/account.",
     "Rules are compacted into grouped route blocks to reduce matching overhead.",
     "FAST_AUTO is intentionally limited to nearby/common fast nodes for rules that explicitly use it.",
-    "Unmatched traffic uses DIRECT so WeChat and other mainland apps do not wait for domain or GeoIP classification before connecting."
+    "Unmatched traffic uses DIRECT so WeChat and other mainland apps do not wait for domain or GeoIP classification before connecting.",
+    "DNS uses IPv4-only answers and reverse mapping to avoid slow IPv6 video startup and improve direct-domain classification on Apple platforms."
   ]
 }
